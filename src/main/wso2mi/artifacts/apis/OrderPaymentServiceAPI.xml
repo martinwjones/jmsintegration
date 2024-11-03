@@ -22,7 +22,7 @@
                 scope="default" type="STRING" value="true" />
             <property description="Generate 202 response from mediation flow"
                 name="FORCE_SC_ACCEPTED" scope="axis2" type="STRING" value="true" />
-            <store messageStore="OrderPaymentMQ_Fail" />
+            <store messageStore="OrderPaymentErrorMQ" />
             <!-- <send description="Publish request payload to JMS endpoint">
                 <endpoint key="OrderPaymentQueueEP"/>
             </send>-->
