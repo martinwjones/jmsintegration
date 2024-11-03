@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="OrderPaymentProxy" startOnLoad="true" transports="http https"
+    xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <sequence key="OrderPaymentQueueProcessSeq" />
+        </inSequence>
+        <outSequence>
+            <property name="HTTP_SC" scope="axis2" type="STRING" value="200"/>
+            <respond/>
+        </outSequence>
+        <faultSequence>
+            <sequence key="OrderPaymentQueueErrorSeq" />
+        </faultSequence>    
+    </target>
+</proxy>
