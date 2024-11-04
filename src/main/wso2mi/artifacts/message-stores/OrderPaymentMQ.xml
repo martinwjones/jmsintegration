@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <messageStore name="OrderPaymentMQ" class="org.apache.synapse.message.store.impl.jms.JmsStore" xmlns="http://ws.apache.org/ns/synapse">
-    <parameter name="store.jms.destination">OrderPaymentMQ</parameter>
     <parameter name="store.jms.connection.factory">QueueConnectionFactory</parameter>
     <parameter name="store.producer.guaranteed.delivery.enable">false</parameter>
     <parameter name="store.jms.cache.connection">false</parameter>
