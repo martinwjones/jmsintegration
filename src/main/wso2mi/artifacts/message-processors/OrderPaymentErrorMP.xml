@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <messageProcessor
     class="org.apache.synapse.message.processor.impl.forwarder.ScheduledMessageForwardingProcessor"
-    name="OrderPaymentErrorMP" messageStore="OrderPaymentMQ_Fail"
+    name="OrderPaymentErrorMP" messageStore="OrderPaymentErrorMQ"
     targetEndpoint="OrderPaymentProxyFailEP" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="client.retry.interval">1000</parameter>
     <parameter name="member.count">1</parameter>
